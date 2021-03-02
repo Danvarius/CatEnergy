@@ -1,5 +1,22 @@
-// Начните писать стили здесь
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+@import 'abstracts/extend';
+@import 'abstracts/block';
 
-body {
-   background-color: rgb(255, 0, 0);
-}
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/visuallyhidden';
+@import 'base/body';
+
+@import 'header/header';
+@import 'footer/footer';
+
+@import 'pagemain/preview';
+@import 'pagemain/offer';
+@import 'pagemain/howwork';
+@import 'pagemain/example';
+
+@import 'page-catalog/product-catalog';
+@import 'page-catalog/additional-goods';
+
+@import 'page-form/contacts-cat';
