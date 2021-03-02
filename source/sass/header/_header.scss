@@ -1,0 +1,52 @@
+//Style header
+
+.page-header__wrapper {
+   display: flex;
+   padding: 10px 0 14px 0;
+   margin: 0 auto;
+   width: 280px;
+}
+
+.page-header__link {
+   margin-right: 65px;
+}
+
+.page-header__logo {
+   width: 191px;
+}
+
+.page-header__menu {
+   display: block;
+   margin-top: 14px;
+   width: 24px;
+   height: 16px;
+
+   background-color: #ffffff;
+   background-image: url('../img/icon-mobile-menu.svg');
+   background-position: 50% 50%;
+   border: none;
+}
+
+.main-nav__list {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.main-nav__link {
+   display: block;
+   padding: 24px 68px;
+   border: 1px solid $basic-grey;
+
+   text-decoration: none;
+   text-align: center;
+   
+   @extend %fonts-link-header;
+}
+
+
+
+
+

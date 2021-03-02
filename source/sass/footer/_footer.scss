@@ -1,0 +1,129 @@
+.page-footer {
+   margin-top: auto;
+   background-color: $basic-grey;
+}
+
+.invite-address {
+
+   .invite-address__wrapper {
+      display: flex;
+      width: 280px;
+      margin: 0 auto;
+      padding: 20px 20px;
+      justify-content: space-between;
+
+      background-color: #ffffff;
+
+      .invite-address__title {
+         margin: 13px 0 0 0;
+
+         font-family: 'Oswald', sans-serif;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 20px;
+         text-transform: uppercase;
+      }
+
+      .invite-address__text {
+         font-family: 'Arial', sans-serif;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 20px;
+      }
+   }
+
+   .invite-address__wrapper-img {
+      position: relative;
+      
+      width: 320px;
+
+      .invite-address__pin {
+         position: absolute;
+         top: 163px;
+         left: 122px;
+      }
+   }
+}
+
+.footer-link__container {
+   display: flex;
+   flex-direction: column;
+
+
+   background-color: $basic-grey;
+
+   .footer-link__logo {
+      display: block;
+      margin: 37px auto 30px auto;
+   }
+
+   .footer-link__line {
+      width: 280px;
+      height: 1px;
+      margin: 0 auto;
+
+      background-color: #D9D9D9;
+   }
+}
+
+.footer-link__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 0;
+   margin: 24px auto;
+   width: 130px;
+
+   list-style: none;
+
+   .footer-link__linkvk {
+      display: block;
+      width: 23px;
+      height: 16px;
+   }
+
+   .footer-link__linkin {
+      position: relative;
+      right: 2px;
+
+      display: block;
+      width: 16px;
+      height: 16px;
+   }
+
+   .footer-link__linkfc {
+      position: relative;
+      bottom: 2px;
+
+      display: block;
+      width: 10px;
+      height: 10px;
+      
+   }  
+}
+
+.page-footer__wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 280px;
+   margin: 15px auto 10px auto;
+
+   .page-footer__text {
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 15px;
+      color: $special-dark-grey;
+   }
+
+   .page-footer__link-academy{
+      display: block;
+      width: 41px;
+      height: 48px;
+      margin-top: 3px;
+   }
+}

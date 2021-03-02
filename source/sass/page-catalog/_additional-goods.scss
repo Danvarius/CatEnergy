@@ -1,0 +1,80 @@
+
+.additional-goods__title {
+   display: inline-block;
+   margin: 28px 18px 35px 19px;
+
+   font-family: 'Oswald', sans-serif;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.additional-goods__line {
+   display: inline-block;
+   margin-bottom: 6px;
+   width: 53px;
+   height: 3px;
+   background-color: $basic-green;
+}
+
+.additional-goods__container {
+   width: 280px;
+   margin: 0 auto;
+   border-top: 1px solid $special-grey;
+   border-bottom: 1px solid $special-grey;
+
+   .additional-goods__heading {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      color: $special-dark-grey-two;
+      text-transform: uppercase;
+   }
+
+   .additional-goods__order-button {
+      margin-bottom: 19px;
+   }
+}
+.additional-goods__box {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+
+   .additional-goods__number {
+      @extend %fonts-box-additional;
+   }
+   
+   .additional-goods__cost {
+      @extend %fonts-box-additional;
+   }
+
+}
+
+.additional-goods__block-bonus {
+   display: flex;
+   flex-direction: column;
+   width: 280px;
+   height: 289px;
+   margin: 35px auto 35px auto;
+
+   background-image: url('../img/gift-photo-mobile@1x.jpg');
+
+   .additional-goods__present-icon {
+      margin: 73px auto 44px auto;
+      width: 58px;
+      height: 60px;
+   }
+
+   .additional-goods__text {
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      color: #ffffff;
+      text-align: center;
+   }
+}

@@ -1,0 +1,38 @@
+.how-work {
+   width: 280px;
+   margin: 0 auto 18px auto;
+
+   .how-work__title {
+      margin: 0 0 38px 0;
+      @extend %fonts-heading-work ;
+   }
+}
+
+.how-work__block {
+   display: flex;
+
+   .how-work__leaf {
+      background-image: url('../img/advantage-leaf@1x.png');
+   }
+
+   .how-work__bottle {
+      background-image: url('../img/advantage-powder@1x.png');
+   }
+
+   .how-work__appliances {
+      background-image: url('../img/advantage-dining@1x.png');
+   }
+
+   .how-work__time {
+      background-image: url('../img/advantage-clock@1x.png');
+   }
+
+   .how-work__text {
+      position: relative;
+      bottom: 10px;
+      
+
+
+      @extend %fonts-text-arial;
+   }
+}
