@@ -1,6 +1,45 @@
+
 .page__body {
    display: flex;
    flex-direction: column;
-   width: 320px;
+   width: 100%;
+   min-width: 320px;
    margin: 0 auto;
+   box-sizing: border-box;
+   
+
+   .main__background {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      display: none;
+
+      background-image: url('../img/index-background-desktop@1x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+@media (min-width: $tablet) {
+   .page__body {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+   }
+}
+
+@media (min-width: $desktop) {
+   .page__body {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+
+      .main__background {
+         display: block;
+      }
+   }
 }

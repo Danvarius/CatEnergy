@@ -1,6 +1,8 @@
 .how-work {
-   width: 280px;
-   margin: 0 auto 18px auto;
+   width: 87.50%;
+   margin: 0 auto;
+   padding: 0 20px;
+   border-bottom: 1px solid #E6E6E6;
 
    .how-work__title {
       margin: 0 0 38px 0;
@@ -8,8 +10,39 @@
    }
 }
 
+@media (min-width: $tablet) {
+
+   .how-work {
+      width: 94.79%;
+      margin: 0 auto 43px auto;
+      padding: 0 20px;
+
+      .how-work__title {
+         margin: 0 0 62px 0;
+
+         font-family: 'Oswald', sans-serif;
+         font-size: 60px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 60px;
+      }
+   }
+}   
+
+@media (min-width: $desktop) {
+   .how-work {
+      width: 84.60%;
+      max-width: 1300px;
+      padding: 0 100px;
+      margin: 0 auto 69px auto;
+      border: none;
+   }
+}   
+
 .how-work__block {
+   position: relative;
    display: flex;
+   margin-bottom: 20px;
 
    .how-work__leaf {
       background-image: url('../img/advantage-leaf@1x.png');
@@ -28,11 +61,112 @@
    }
 
    .how-work__text {
-      position: relative;
-      bottom: 10px;
-      
+      align-self: center;
 
-
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       @extend %fonts-text-arial;
+   }
+
+   .how-work__number {
+      display: none;
+   }
+}
+
+@media (min-width: $tablet) {
+
+   .how-work__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 90%;
+      box-sizing: border-box;
+      margin: 0;
+   }
+
+   .how-work__block {
+      position: relative;
+      flex-direction: column;
+      width: 250px;
+      margin: 0 0 110px 0;
+
+      .how-work__text {
+         position: relative;
+         z-index: 2;
+
+         font-family: 'Arial', sans-serif;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 24px;
+      }
+
+      .how-work__number {
+         position: absolute;
+         bottom: -25px;
+         right: 0;
+
+         display: block;
+         z-index: 1;
+
+         font-family: 'Oswald', sans-serif;
+         font-size: 280px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 280px;
+         color: $basic-grey;
+      }
+
+      .how-work__number--one {
+        right: 15px;
+      }
+   }
+}
+
+@media (min-width: 880px) {
+   .how-work__block {
+      margin-right: 20px;
+   }
+}
+
+@media (min-width: 960px) {
+   .how-work__block {
+      margin-right: 20px;
+   }
+}
+
+@media (min-width: 1173px) {
+   .how-work__wrapper {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      width: 100%;
+   }
+
+   .how-work__block {
+      margin-left: 60px;
+   }
+
+   .how-work__wrapper div:nth-child(1) {
+      margin-left: 0;
+   }
+}
+
+@media (min-width: $desktop) {
+
+   .how-work__wrapper {
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   .how-work__block {
+      width: 21.50%;
+      margin: 0;
+   }
+
+   .how-work__wrapper div:nth-child(1) {
+      margin-left: 0;
    }
 }

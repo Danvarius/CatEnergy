@@ -10,26 +10,25 @@
 <body class="page__body">
 
    <header class="page-header">
-      <div class="page-header__wrapper">
-         <a href="#" class="link page-header__link">
-            <img class="logo page-header__logo" src="./img/logo-mobile.svg" alt="Логотип компании Cat Energy">
-         </a>
-         <button type="button" class="page-header__menu"></button>
-      </div>      
-      <nav class="main-nav visually-hidden">
+      <div class="page-header__wrapper page-header__wrapper--nojs">
+         <a href="#" class="link page-header__link"></a>
+         <a href="#" class="link page-header__text"></a>
+         <button type="button" class="page-header__menu page-header__menu--closed"></button>
+      </div>
+      <nav class="main-nav js-no">
          <ul class="main-nav__list">
             <li class="main-nav__item">
-               <a class="main-nav__link" href="#">
+               <a class="main-nav__link main-nav__link--white" href="index.html">
                   Главная
                </a>
             </li>
             <li class="main-nav__item">
-               <a class="main-nav__link" href="catalog.html">
+               <a class="main-nav__link main-nav__link--white" href="catalog.html">
                   Каталог Продукции
                </a>
             </li>
             <li class="main-nav__item">
-               <a class="main-nav__link" href="form.html">
+               <a class="main-nav__link main-nav__link--white" href="form.html">
                   Подбор Программы
                </a>
             </li>
@@ -39,77 +38,81 @@
 
    <main class="main-form">
       <section class="contacts-cat">
-         <h2 class="title program-selection__title">Подбор программы</h2>
-         <p class="program-selection__subtitle">
-            Заполните анкету и мы подберем<br>
-            программу питания для вашего кота
-         </p>
-         <form class="contacts-cat__form" action="https://echo.htmlacademy.ru" method="GET"></form>
-            <div class="workheet-container">
-              <label class="worksheet__label">
-                Имя:*
-                <input class="input workheet__input workheet__input--name" type="text" placeholder="Барсик" required>
-              </label>
-              <label class="worksheet__label">
-                Вес (кг):*
-                <input class="input workheet__input workheet__input--weight" type="text" placeholder="7" required>
-              </label>
-              <label class="worksheet__label">
-                Возраст (лет):
-                <input class="input workheet__input workheet__input--age" type="text" placeholder="7">
-              </label>
-            </div>
-            <div class="radio-wrapper">
-              <ul class="radio__list">
-                <li class="radio__item">
-                    <label class="radio__label">
-                      <input class="input radio__input" type="radio" name="radio" value="slimming" checked>
-                      <span class="radio__box"></span>
-                      <span class="radio__text">Похудение</span>
-                    </label>
-                </li>
-                <li class="radio__item">
-                    <label class="radio__label">
-                      <input class="input radio__input" type="radio" name="radio" value="weight">
-                      <span class="radio__box"></span>
-                      <span class="radio__text">Набор массы</span>
-                    </label>
-                </li>
-                <li class="radio__item">
-                    <label class="radio__label">
-                      <input class="input radio__input" type="radio" name="radio" value="unknown">
-                      <span class="radio__box"></span>
-                      <span class="radio__text">Не знаю(нужен ваш совет)</span>
-                    </label>
-                </li>
-              </ul>
-            </div>
+         <form class="contacts-cat__form" action="https://echo.htmlacademy.ru" method="GET">
+            <h2 class="title contact-cat__title">Подбор программы</h2>
+            <p class="contact-cat__subtitle">
+               Заполните анкету и мы подберем<br>
+               программу питания для вашего кота
+            </p>
+            <div class="worksheet__wrapper">
+               <div class="worksheet-container">
+                  <div class="worksheet-box">
+                     <label class="worksheet__label">Имя:*</label>
+                     <input class="input workheet__input workheet__input--name" type="text" placeholder="Барсик" required>
+                  </div>
+                  <div class="worksheet-box">
+                     <label class="worksheet__label-weight">Вес (кг):*</label>
+                     <input class="input workheet__input workheet__input--weight" type="text" placeholder="7" required>
+                  </div>
+                  <div class="worksheet-box">
+                     <label class="worksheet__label">Возраст (лет):</label>
+                     <input class="input workheet__input workheet__input--age" type="text" placeholder="7">
+                  </div>   
+               </div>
+               <div class="radio-wrapper">
+                  <ul class="radio__list">
+                     <li class="radio__item">
+                        <label class="radio__label">
+                           <input class="input radio__input" type="radio" name="radio" value="slimming" checked>
+                           <span class="radio__box"></span>
+                           <span class="radio__text">Похудение</span>
+                        </label>
+                     </li>
+                     <li class="radio__item">
+                        <label class="radio__label">
+                           <input class="input radio__input" type="radio" name="radio" value="weight">
+                           <span class="radio__box"></span>
+                           <span class="radio__text">Набор массы</span>
+                        </label>
+                     </li>
+                     <li class="radio__item">
+                        <label class="radio__label">
+                           <input class="input radio__input" type="radio" name="radio" value="unknown">
+                           <span class="radio__box"></span>
+                           <span class="radio__text">Не знаю(нужен ваш совет)</span>
+                        </label>
+                     </li>
+                  </ul>
+               </div>
+              </div> 
               <fieldset class="contacts-cat__information">
                 <div class="contacts-cat__wrapper">
-                  <legend class="contacts-cat__title">Контактные данные<br>(владельца кота)</legend>
-                  <span class="contacts-cat__line"></span>
+                  <legend class="contacts-cat__title">Контактные данные (владельца кота)</legend>
                 </div>
-                <label class="contacts-cats__label">
-                    E-mail:*
-                    <input class="input contacts-cat__form contacts-cat__form--email" type="email" placeholder="kuklachev@gmail.com">
-                </label>
-                <label class="contacts-cats__label">
-                    Телефон:*
-                    <input class="input contacts-cat__form contacts-cat__form--tel" type="tel" placeholder="8 (960) 900-60-90">
-                </label>
+                <div class="contacts-cat__big-line"></div>
+                <div class="contacts-cat__wrappers">
+                  <div class="contacts-cat__flex-box">
+                     <label class="contacts-cats__label">E-mail:*</label>
+                     <input class="input contacts-cat__email" type="email" placeholder="kuklachev@gmail.com">
+                  </div> 
+                  <div class="contacts-cat__flex-box">
+                     <label class="contacts-cats__label">Телефон:*</label>
+                     <input class="input contacts-cat__tel" type="tel" placeholder="8 (960) 900-60-90">
+                  </div>   
+                </div>  
               </fieldset>
               <fieldset class="contacts-cat__comment">
-               <div class="contacts-cat__wrapper">
-                  <legend class="contacts-cat__title">Комментарий</legend>
-                  <div class="contacts-cat__line"></div>
-               </div>
-                <textarea class="input contacts-cat__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <div class="contacts-cat__wrapper">
+                     <legend class="contacts-cat__title">Комментарий</legend>
+                  </div>
+                  <div class="contacts-cat__big-line"></div>
+                  <textarea class="input contacts-cat__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
               <fieldset class="contacts-cat__additions">
-               <div class="contacts-cat__wrapper">
+                <div class="contacts-cat__wrapper">
                   <legend class="contacts-cat__title">Дополнительно</legend>
-                  <span class="contacts-cat__line"></span>
                 </div>  
+                <div class="contacts-cat__big-line"></div>
                 <ul class="contacts-cat__list">
                     <li class="contacts-cat__item">
                       <label class="contacts-cat__label">
@@ -141,30 +144,28 @@
                     </li>
                 </ul>
               </fieldset>
-              <button class="button-catalog contacts-cat__button" type="submit" name="button">Отправить заявку</button>
-          </form>
+            <div class="contacts-cat__wrap">
+               <button class="button-catalog contacts-cat__button" type="submit" name="button">Отправить заявку</button>
+            </div>
+         </form>
           <span class="contacts-cat__field">* __ Обязательные поля</span>
       </section>
    </main>
 
-   <footer class="page-footer page-footer--grey">
+   <footer class="page-footer">
       <section class="invite-address">
-         <div class="invite-address__wrapper">
+         <div class="invite-address__wrapper invite-address__wrapper--white">
             <h3 class="title invite-address__title">
-               Приглашаем<br>
-               к сотрудничеству<br>
-               дилеров!
-           </h3>
-           <p class="text invite-address__text">
-              Ул. Большая<br>
-              Арнаутская 2, д. 19/8<br>
-              Одесса
-           </p>
+               Приглашаем к сотрудничеству дилеров!
+            </h3>
+            <p class="text invite-address__text">
+               ул. Большая Арнаутская 2, д. 19/8
+               <span class="invite-address__sub">Одесса</span>
+            </p>
          </div>
-         <div class="invite-address__wrapper-img">
-            <img class="invite-address__img" src="./img/bg-map-mobile@1x.png" alt="Карта с адресом нашего магазина, а именно улица Большая Арнаутская 19, город Одесса">
-            <img class="invite-address__pin" src="./img/map-pin.png" alt="" width="70">
-         </div>
+         <iframe class="invite-address__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.820862507851!2d30.75060311559151!3d46.4720561791258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63170c46f21d7%3A0xefb64d46241b0f00!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JDRgNC90LDRg9GC0YHQutCw0Y8sIDIsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1615837548940!5m2!1sru!2sua"
+            width="320" height="362" allowfullscreen></iframe>
       </section>
       <div class="footer-link__container">
          <a href="#" class="link footer-link__logo">
@@ -174,8 +175,9 @@
          <ul class="footer-link__list social-list">
             <li class="footer-link__item">
                <a href="#" class="footer-link__linkvk">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                    viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                  <svg class="footer-link__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12"
+                     style="enable-background:new 0 0 22 12;" xml:space="preserve">
                      <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
                         c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
                         s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
@@ -188,51 +190,61 @@
                         c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.1-1.3,0-1.3-0.3-1.4s-0.5-0.1-1.4-0.1H10
                         c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
                         C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
-                        c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" fill="#666666"/>
-               </svg>
+                        c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" fill="#666666" />
+                  </svg>
                </a>
             </li>
             <li class="footer-link__item">
                <a href="#" class="footer-link__linkin">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
+                  <svg class="footer-link__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16"
+                     style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
                      <style type="text/css">
-                        .st0{fill:#666666;}
+                        .st0 {
+                           fill: #666666;
+                        }
                      </style>
-                     <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-                        M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
+                     <path class="st0"
+                        d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                        M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
                      <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-                        s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
-                     <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+                        s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
+                     <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
                   </svg>
                </a>
             </li>
             <li class="footer-link__item">
                <a href="#" class="footer-link__linkfc">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                  <svg class="footer-link__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19"
+                     style="enable-background:new 0 0 10 19;" xml:space="preserve">
                      <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
                         h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
-                        z" fill="#666666"/>
+                        z" fill="#666666" />
                   </svg>
                </a>
             </li>
          </ul>
          <div class="footer-link__line"></div>
          <div class="page-footer__wrapper">
-            <span class="text page-footer__text">Ivan Durbala</span>
             <a href="#" class="page-footer__link-academy">
-               <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <path class="st0" d="M30.2,5H30L10.3,7.1v36.2L30,55l19.7-11.7V7.1C49.7,7.1,30.2,5,30.2,5z M47.2,41.8L30,52L12.8,41.8V27
+               <span class="text page-footer__text">Ivan Durbala</span>
+               <svg class="page-footer__svg" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
+                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                  <path class="st0"
+                     d="M30.2,5H30L10.3,7.1v36.2L30,55l19.7-11.7V7.1C49.7,7.1,30.2,5,30.2,5z M47.2,41.8L30,52L12.8,41.8V27
                      l17.1,10.2V39l-11.7-7v1.8L30,40.9v1.9l-11.8-7v1.8l11.8,7l11.9-7.1v-7.6l5.3-3.2V41.8z M47.1,24.8l-4.7,2.8l-2.2,1.3l-10.3-6.1v1.8
                      l8.8,5.3h-0.1L38.4,30l-1.3,0.7l-7.3-4.3v1.8l5.8,3.4l-1.4,0.9l-4.3-2.6v1.8l2.9,1.7l-2.9,1.7L12.9,25l17-10.2
-                     C29.9,14.8,47.1,24.8,47.1,24.8z M47.2,23L29.9,12.8L12.8,23V9.4L30,7.6l17.2,1.8C47.2,9.4,47.2,23,47.2,23z" fill="#666666"/>
+                     C29.9,14.8,47.1,24.8,47.1,24.8z M47.2,23L29.9,12.8L12.8,23V9.4L30,7.6l17.2,1.8C47.2,9.4,47.2,23,47.2,23z"
+                     fill="#666666" />
                </svg>
             </a>
          </div>
-      </div>   
+      </div>
    </footer>
+
+   <script src="/js/script.js"></script>
 
 </body>
 
