@@ -127,7 +127,6 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   margin-bottom: 20px;
 
    .living-example__cost {
       font-family: 'Oswald', sans-serif;
@@ -294,11 +293,13 @@
 
    .living-example__image {
       min-height: 232px;
-      margin-bottom: 35px;
+      width: 320px;
+      margin: 0 auto 35px auto;
+   }
 
-      background-image: url('../img/before-mobile@1x.png');
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
+   .living-example__img {
+      width: 100%;
+      height: auto;
    }
 }
 
@@ -308,7 +309,7 @@
       position: relative;
       width: 100%;
       min-height: 645px;
-      padding: 0 0 45px 0;
+      padding: 0;
       margin: 0;
 
       .living-example__wrapper-image {
@@ -317,7 +318,7 @@
 
          display: block;
          width: 100%;
-         min-height: 480px;
+         height: 480px;
          z-index: 1;
 
          background-color: $basic-grey;
@@ -326,14 +327,10 @@
       .living-example__image {
          position: relative;
 
-         width: 708px;
-         height: 607px;
+         width: 690px;
+         height: 517px;
          z-index: 2;
          margin: 0 auto;
-
-         background-image: url('../img/before-tablet@1x.png');
-         background-repeat: no-repeat;
-         background-position: 50% 50%;
       }
    }
 }
@@ -358,7 +355,6 @@
       .living-example__image {
          margin: 0 0 0 20px;
          width: 690px;
-         background-image: url('../img/before-desktop@1x.png');
       }
    }
 }
@@ -368,6 +364,10 @@
    display: flex;
    width: 207px;
    justify-content: space-between;
+
+   .about-diffenition__wrapper-input {
+      display: none;
+   }
 
    .about-diffenition__range {
       width: 78px;
@@ -409,7 +409,7 @@
       width: 75%;
       max-width: 610px;
       z-index: 2;
-      margin: 0 auto 20px auto;
+      margin: 20px auto;
 
       .about-diffenition__text {
          font-family: 'Oswald', sans-serif;
@@ -424,6 +424,7 @@
       }
 
       .about-diffenition__wrapper-input {
+         display: block;
          width: 438px;
          height: 10px;
          margin: 12px 20px 0 20px;
