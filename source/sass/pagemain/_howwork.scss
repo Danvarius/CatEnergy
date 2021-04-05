@@ -44,20 +44,10 @@
    display: flex;
    margin-bottom: 20px;
 
-   .how-work__leaf {
-      background-image: url('../img/advantage-leaf@1x.png');
-   }
-
-   .how-work__bottle {
-      background-image: url('../img/advantage-powder@1x.png');
-   }
-
-   .how-work__appliances {
-      background-image: url('../img/advantage-dining@1x.png');
-   }
-
-   .how-work__time {
-      background-image: url('../img/advantage-clock@1x.png');
+   .how-work__img {
+      position: absolute;
+      top: 14px;
+      left: 15px;
    }
 
    .how-work__text {
@@ -92,6 +82,13 @@
       flex-direction: column;
       width: 250px;
       margin: 0 0 110px 0;
+
+      .how-work__img {
+         width: 32px;
+         height: 34px;
+         top: 25px;
+         left: 24px ;
+      }
 
       .how-work__text {
          position: relative;

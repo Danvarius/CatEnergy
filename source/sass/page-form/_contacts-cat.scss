@@ -333,7 +333,7 @@
       border: 1px solid $special-grey;
       border-radius: 50%;
       cursor: pointer;
-      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 18 18' style='enable-background:new 0 0 18 18;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2368B738;%7D%0A%3C/style%3E%3Ccircle class='st0' cx='9' cy='9' r='9'/%3E%3C/svg%3E");
+      background-image: url('../img/circle-green.svg');
       background-repeat: no-repeat;
       background-position: 50% 50%;
       background-size: 0px 0px;
@@ -555,7 +555,7 @@ background-position: 95% 50%;
 
    &:focus {
       outline: 1px solid #444444;
-      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 19 14' style='enable-background:new 0 0 19 14;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%2368B738;stroke-width:1.3;%7D%0A%3C/style%3E%3Cline class='st0' x1='1.1' y1='6' x2='1.1' y2='14'/%3E%3Cline class='st0' x1='18.1' y1='6' x2='18.1' y2='14'/%3E%3Cline class='st0' x1='0.5' y1='13.4' x2='18.5' y2='13.4'/%3E%3Cline class='st0' x1='0.5' y1='1.4' x2='18.5' y2='1.4'/%3E%3Cpath class='st0' d='M17.8,3.2L9.5,9.7L1.1,3.2V1.6H4h5.5h5h3.4V3.2z'/%3E%3C/svg%3E");
+      fill: $basic-green;
    }
 
    &:active {
@@ -571,7 +571,7 @@ background-position: 95% 50%;
    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' style='enable-background:new 0 0 20 20;' xml:space='preserve'%3E%3Cpath d='M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z'/%3E%3Cpath d='M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7 c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6 C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4 C7.8,20,8.1,19.7,8.1,19.4z'/%3E%3C/svg%3E%0A");
    background-repeat: no-repeat;
    background-size: 20px 20px;
-   background-position: 95% 50%;
+   background-position: 97% 50%;
 
    @extend %fonts-form;
 
@@ -581,7 +581,7 @@ background-position: 95% 50%;
 
    &:focus {
       outline: 1px solid #444444;
-      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' style='enable-background:new 0 0 20 20;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bclip-path:url(%23SVGID_2_);%7D .st1%7Bfill:%2368B738;%7D%0A%3C/style%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' x='0.6' width='19.1' height='20'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' style='overflow:visible;'/%3E%3C/clipPath%3E%3Cg class='st0'%3E%3Cpath class='st1' d='M17.8,9.4H9.6v1.2h8.1l-2,2.1l0.9,0.9l3-3.1c0.1-0.1,0.1-0.3,0.1-0.4c0-0.2-0.1-0.3-0.1-0.4l-3-3.1l-0.9,0.9 L17.8,9.4z'/%3E%3Cpath class='st1' d='M8.4,19.4v-6.2c0-0.2-0.1-0.3-0.2-0.4s-0.2-0.2-0.4-0.2H3.6c0,0.3,0.1,0.6,0.3,0.8c0.2,0.2,0.5,0.4,0.8,0.4 h2.4v5H3.6c-0.2,0-0.5,0-0.7-0.1c-0.2-0.1-0.4-0.2-0.6-0.4S2,18,1.9,17.8c-0.1-0.2-0.2-0.4-0.2-0.7v-14c0-0.5,0.2-0.9,0.5-1.2 C2.5,1.5,3,1.3,3.4,1.3h3.7v5H4.8C4.5,6.3,4.2,6.4,4,6.7C3.8,6.9,3.7,7.2,3.7,7.5h4.2c0.1,0,0.3-0.1,0.4-0.2 c0.1-0.1,0.2-0.3,0.2-0.4V0.6c0-0.2-0.1-0.3-0.3-0.4C8.1,0.1,8,0,7.8,0H3.6C3.2,0,2.8,0.1,2.5,0.2c-0.4,0.1-0.7,0.3-1,0.6 C1.3,1.1,1,1.4,0.9,1.8C0.7,2.1,0.6,2.5,0.6,2.9v13.9c0,0.4,0,0.8,0.2,1.2c0.1,0.4,0.3,0.7,0.6,1c0.3,0.3,0.6,0.5,0.9,0.7 c0.4,0.2,0.7,0.2,1.1,0.2h4.4c0.1,0,0.1,0,0.2,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1-0.1,0.1-0.2C8.4,19.5,8.4,19.5,8.4,19.4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      fill: $basic-green;
    }
 
    &:active {
@@ -621,7 +621,7 @@ background-position: 95% 50%;
          margin-left: 14px;
          width: 496px;
 
-         background-position: 96% 50%;
+         background-position: 97% 50%;
       }
    }
 }
