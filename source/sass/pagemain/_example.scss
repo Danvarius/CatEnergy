@@ -79,6 +79,7 @@
 
 .living-example__wrapper {
    width: 87.50%;
+   max-width: 1114px;
    padding: 24px 20px;
    margin: 0 auto;
 
@@ -112,7 +113,7 @@
 
    .living-example__wrapper {
       width: 1220px;
-      padding: 0 0 35px 0;
+      padding: 0 0 45px 0;
 
       .living-example__text {
          width: 36%;
@@ -211,6 +212,7 @@
 }   
 
 .about-example__wrapper {
+   position: relative;
    width: 124px;
    min-height: 56px;
    margin-bottom: 31px;
@@ -220,12 +222,14 @@
    text-align: center;
 
    .about-example__title {
-      margin: 14px 0 11px 0;
+      margin: 14px 0 17px 0;
       @extend %fonts-title-example;
    }
 
    .about-example__subtitle {
-
+      position: absolute;
+      left: 20px;
+      top: 50px;
       display: block;
       width: 87px;
       margin: 0 auto;
@@ -239,7 +243,8 @@
    }
 
    .about-example__subtitle--small {
-      width: 87px;
+      left: 13px;
+      width: 100px;
    }
 }
 
@@ -261,7 +266,9 @@
       }
 
       .about-example__subtitle {
-         width: 150px;
+         top: 70px;
+         left: 31px;
+         width: 100px;
          background-color: #fff;
 
          font-size: 14px;
@@ -269,7 +276,8 @@
       }
 
       .about-example__subtitle--small {
-         width: 110px;
+         left: 20px;
+         width: 122px;
       }
    }
 }

@@ -8,7 +8,7 @@
    <title>Cat Energy</title>
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -53,7 +53,7 @@
       <section class="offer">
          <div class="offer__wrapper">
             <div class="offer__wrapper-img">
-               <img class="offer__img" src="./img/icon-cat-slim.svg" alt="" width="36" height="50">
+               <img class="offer__img" src="img/icon-cat-slim.svg" alt="" width="36" height="50">
             </div>
             <h3 class="offer__title">Похудение</h3>
             <p class="offer__text">
@@ -187,6 +187,8 @@
             <div class="living-example__diffenition">
                <div class="living-example__image">
                   <picture>
+                     <source type="image/webp" media="" srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.webp 2x">
+                     <source type="image/webp" srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.webp 2x">
                      <source media="(min-width:768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
                      <img class="living-example__img" src="./img/before-mobile@1x.png" scrset="./img/before-mobile@2x.png 2x" alt="Кот до похудения">
                   </picture>
@@ -261,7 +263,7 @@
       </div>
    </footer>
 
-   <script src="/js/script.js"></script>
+   <script src="/js/main.min.js"></script>
 
 </body>
 

@@ -22,10 +22,10 @@
    .preview__title {
       position: relative;
    
-      width: 100%;
+      width: 90%;
       margin: 0;
-      margin-bottom: 25px;
-      padding: 0;
+      margin: 0 auto 25px auto;
+      padding: 0 10px;
       z-index: 3;
    
       font-family: 'Oswald', sans-serif;
@@ -187,7 +187,7 @@
       width: 75.15%;
       max-width: 1150px;
       min-height: 500px;
-      margin: 0 auto 52px auto;
+      margin: 0 auto 90px auto;
       padding: 0 100px;
 
       .preview__title {
@@ -202,10 +202,11 @@
 
       .preview__img {
          top: -70px;
-         right: 215px;
+         right: 0px;
+         margin-right: 16%;
 
          width: 552px;
-         height: 449px;
+         height: 490px;
 
          background-image: url('../img/index-can-desktop@1x.png');
       }
