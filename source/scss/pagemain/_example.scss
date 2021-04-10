@@ -40,10 +40,7 @@
          padding: 0 0 0 2.61%;
          min-width: 325px;
 
-         font-family: 'Oswald', sans-serif;
          font-size: 60px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 60px;
       }
    }
@@ -51,8 +48,6 @@
 
 @media (min-width: $desktop) {
    .living-example {
-      
-      width: 100%;
       margin: 0;
       padding: 0;
       background-color: $basic-grey;
@@ -72,7 +67,7 @@
       .living-example__title {
          padding: 30px 0 0 0;
          margin: 0 auto;
-         max-width: 1220px;
+         max-width: 1114px;
       }
    }
 }   
@@ -80,7 +75,7 @@
 .living-example__wrapper {
    width: 87.50%;
    max-width: 1114px;
-   padding: 24px 20px;
+   padding: 24px 20px 10px 20px;
    margin: 0 auto;
 
    .living-example__text {
@@ -100,10 +95,7 @@
          margin: 0 0 50px 10px;
          padding: 0;
 
-         font-family: 'Arial', sans-serif;
          font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 24px;
       }
    }
@@ -117,7 +109,6 @@
 
       .living-example__text {
          width: 36%;
-         padding: 0;
          margin: 150px 0 70px 0;
       }
    }
@@ -150,13 +141,9 @@
          margin: 0;
          padding: 0;
 
-         font-family: 'Oswald', sans-serif;
          font-size: 20px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 28px;
          text-align: right;
-         text-transform: uppercase;
       }
    }
 }
@@ -168,7 +155,6 @@
       .living-example__cost {
          width: 210px;
          margin: 30px 0 0 90px;
-         padding: 0;
 
          text-align: center;
       }
@@ -185,14 +171,7 @@
       display: inline-block;
       margin: 0;   
    }
-}   
-
-@media (min-width: $desktop) {
-
-   .living-example__about {
-      margin: 0;
-   }
-}   
+}     
 
 .living-example__wrapping {
    display: flex;
@@ -258,10 +237,7 @@
       .about-example__title {
          margin: 17px 0 15px 0;;
       
-         font-family: 'Oswald', sans-serif;
          font-size: 30px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 37px;
       }
 
@@ -302,12 +278,39 @@
    .living-example__image {
       min-height: 232px;
       width: 320px;
-      margin: 0 auto 35px auto;
+      margin: 0 auto 25px auto;
    }
 
    .living-example__img {
       width: 100%;
       height: auto;
+      opacity: 1;
+
+      transition: opacity 1s ease;
+   }
+
+   .living-example__img--off {
+      width: 100%;
+      height: 0;
+      opacity: 0;
+
+      transition: opacity 1s ease;
+   }
+
+   .living-example__img-two {
+      width: 100%;
+      height: 0;
+      opacity: 0;
+
+      transition: opacity 1s ease;
+   }
+
+   .living-example__img-two--on {
+      width: 100%;
+      height: auto;
+      opacity: 1;
+
+      transition: opacity 1s ease;
    }
 }
 
@@ -338,7 +341,7 @@
          width: 690px;
          height: 517px;
          z-index: 2;
-         margin: 0 auto;
+         margin-bottom: 0;
       }
    }
 }
@@ -370,7 +373,8 @@
 .about-diffenition__wrapper {
    margin: 0 auto;
    display: flex;
-   width: 207px;
+   width: 62.69%;
+   max-width: 300px;
    justify-content: space-between;
 
    .about-diffenition__wrapper-input {
@@ -378,9 +382,9 @@
    }
 
    .about-diffenition__range {
-      width: 78px;
+      width: 37.69%;
       height: 9px;
-      margin-top: 3px;
+      margin-top: 4px;
       padding: 3px 0 0 6px;
       border: 1px solid $special-grey;
 
@@ -389,24 +393,62 @@
    }
 
    .about-diffenition__small-range {
-      width: 35px;
+      width: 44.88%;
       height: 6px;
       border-radius: 15px;
+      margin-left: 0;
 
       background-color: $basic-green;
+
+      transition: all 0.5s ease;
+   }
+
+   .about-diffenition__small-range--right {
+      margin-left: 48%;
+
+      transition: all 0.5s ease;
    }
 
    .about-diffenition__input {
       display: none;
    }
 
-   .about-diffenition__text {
+   .about-diffenition__link {
+      padding: 0;
+
       font-family: 'Oswald', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
       text-transform: uppercase;
+      border: none;
+      outline: none;
+      color: #000000;
+   }
+
+   .about-diffenition__link-one {
+      padding: 1px 0;
+   }
+
+   .about-diffenition__link-two {
+      padding: 1px 0;
+   }
+
+   .about-diffenition__border {
+      border-bottom: 2px solid $basic-green;
+   }
+
+   .about-diffenition__text {
+      display: none;
+
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #000000;
    }
 }
 
@@ -417,13 +459,15 @@
       width: 75%;
       max-width: 610px;
       z-index: 2;
-      margin: 20px auto;
+      margin: 50px auto 20px auto;
+
+      .about-diffenition__link {
+         display: none;
+      }
 
       .about-diffenition__text {
-         font-family: 'Oswald', sans-serif;
+         display: block;
          font-size: 20px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 30px;
       }
 

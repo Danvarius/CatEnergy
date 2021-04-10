@@ -7,8 +7,7 @@
 @media (min-width: $tablet) {
    .offer {
       width: 94.79%;
-      margin: 0 auto 45px auto;
-      padding: 0 20px;
+      margin-bottom: 45px;
    }
 }   
 
@@ -23,7 +22,7 @@
       width: 84.60%;
       max-width: 1300px;
       padding: 0 100px;
-      margin: 0 auto 71px auto;
+      margin-bottom: 71px;
    }
 }   
 
@@ -106,16 +105,17 @@
          display: block;
          width: 32px;
          height: 10px;
-         margin: 2px 0 0 15px;
+         margin: 3px 0 0 15px;
 
          background-image: url('../img/icon-right-arrow-long.svg');
          background-repeat: no-repeat;
          
          opacity: 1;
+         transition: background-image 0.1s ease-out;
       }
 
       &:hover::after {
-         margin: 2px 0 0 17px;
+         margin: 0 0 0 17px;
          background-image: url('../img/icon-right-arrow-verylong.svg');
          background-repeat: no-repeat;
          background-size: 32px 12px;
@@ -131,7 +131,6 @@
 @media (min-width: $tablet) {
 
    .offer__wrapper {
-      position: relative;
 
       margin-bottom: 30px;
       padding: 100px 53px 100px 53px;
@@ -165,10 +164,7 @@
          display: block;
          margin: 0 0 20px 0;
    
-         font-family: 'Oswald', sans-serif;
          font-size: 36px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 36px;
       }
 
@@ -176,10 +172,7 @@
          margin: 0;
          width: 64%;
 
-         font-family: 'Arial', sans-serif;
          font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 24px;
       }
 
@@ -196,14 +189,11 @@
          left: 52px;
          bottom: 55px;
 
-         font-family: 'Oswald',sans-serif;
          font-size: 20px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 30px;
 
          &::after {
-            margin-top: 9px;
+            margin-top: 10px;
          }
 
          &:hover::after {
@@ -220,7 +210,6 @@
 @media (min-width: $desktop) {
 
    .offer__wrapper {
-      width: 100%;
       padding: 0 40px 47px 52px;
       margin: 0;
       box-sizing: border-box;

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cat Energy</title>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.min.css">
-</head>
+
+   <head>
+      <meta charset="UTF-8">
+      <title>Cat Energy</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="catenergy, cat energy, academy, кет енерджи">
+      <meta name=description content="Сайт Cat Energy создан для демонстрации навыков верстки от Дурбала И.Р."> 
+      <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64x64.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+      <link rel="manifest" href="img/site.webmanifest">
+      <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="preload" href="../fonts/oswald-v36-latin_cyrillic-regular.woff2" type="font/woff2" as="font">
+      <link rel="preload" href="../fonts/oswald-v36-latin_cyrillic-regular.woff2" type="font/woff2" as="font"> 
+      <link rel="preload" href="../fonts/oswald-v36-latin_cyrillic-500.woff2" type="font/woff2" as="font">
+      <link rel="stylesheet" href="css/style.min.css">
+   </head>
+
 <body class="page__body">
 
    <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--nojs">
-         <a href="#" class="link page-header__link"></a>
-         <a href="#" class="link page-header__text"></a>
-         <button type="button" class="page-header__menu page-header__menu--closed"></button>
+         <a class="link page-header__link" href="index.html" aria-label="Логотип компании Cat Energy"></a>
+         <a class="link page-header__text" href="index.html" aria-label="Cat Energy"></a>
+         <button type="button" class="page-header__menu page-header__menu--closed" aria-label="Открытия интерактивного меню навигации"></button>
       </div>
       <nav class="main-nav js-no">
          <ul class="main-nav__list">
@@ -49,16 +58,16 @@
             <div class="worksheet__wrapper">
                <div class="worksheet-container">
                   <div class="worksheet-box">
-                     <label class="worksheet__label">Имя:*</label>
-                     <input class="input workheet__input workheet__input--name" type="text" placeholder="Барсик" required>
+                     <label for="worksheet-name" class="worksheet__label">Имя:*</label>
+                     <input id="worksheet-name" class="input workheet__input workheet__input--name" type="text" placeholder="Барсик" required>
                   </div>
                   <div class="worksheet-box">
-                     <label class="worksheet__label-weight">Вес (кг):*</label>
-                     <input class="input workheet__input workheet__input--weight" type="text" placeholder="7" required>
+                     <label for="worksheet-weight" class="worksheet__label-weight">Вес (кг):*</label>
+                     <input id="worksheet-weight" class="input workheet__input workheet__input--weight" type="text" placeholder="7" required>
                   </div>
                   <div class="worksheet-box">
-                     <label class="worksheet__label">Возраст (лет):</label>
-                     <input class="input workheet__input workheet__input--age" type="text" placeholder="7">
+                     <label for="worksheet-age" class="worksheet__label">Возраст (лет):</label>
+                     <input id="worksheet-age" class="input workheet__input workheet__input--age" type="text" placeholder="7">
                   </div>   
                </div>
                <div class="radio-wrapper">
@@ -94,12 +103,12 @@
                 <div class="contacts-cat__big-line"></div>
                 <div class="contacts-cat__wrappers">
                   <div class="contacts-cat__flex-box">
-                     <label class="contacts-cats__label">E-mail:*</label>
-                     <input class="input contacts-cat__email" type="email" placeholder="kuklachev@gmail.com" required>
+                     <label for="contacts-email" class="contacts-cats__label">E-mail:*</label>
+                     <input id="contacts-email" class="input contacts-cat__email" type="email" placeholder="kuklachev@gmail.com" required>
                   </div> 
                   <div class="contacts-cat__flex-box">
-                     <label class="contacts-cats__label">Телефон:*</label>
-                     <input class="input contacts-cat__tel" type="tel" placeholder="8 (960) 900-60-90" required>
+                     <label for="contacts-tel" class="contacts-cats__label">Телефон:*</label>
+                     <input id="contacts-tel" class="input contacts-cat__tel" type="tel" placeholder="8 (960) 900-60-90" required>
                   </div>   
                 </div>  
               </fieldset>
@@ -108,7 +117,9 @@
                      <legend class="contacts-cat__title">Комментарий</legend>
                   </div>
                   <div class="contacts-cat__big-line"></div>
-                  <textarea class="input contacts-cat__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <div class="contacts-cat__container-text">
+                     <textarea class="input contacts-cat__text" name="comment" placeholder="Расскажите обо всех повадках кота" cols="50"></textarea>
+                  </div>   
               </fieldset>
               <fieldset class="contacts-cat__additions">
                 <div class="contacts-cat__wrapper">
@@ -156,7 +167,7 @@
 
    <footer class="page-footer">
       <section class="invite-address">
-         <div class="invite-address__wrapper invite-address__wrapper--white">
+         <div class="invite-address__wrapper">
             <h3 class="title invite-address__title">
                Приглашаем к сотрудничеству дилеров!
             </h3>
@@ -165,30 +176,30 @@
                <span class="invite-address__sub">Одесса</span>
             </p>
          </div>
-         <iframe class="invite-address__map"
+         <iframe class="invite-address__map" title="Гугл карта адреса офиса Cat Energy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.820862507851!2d30.75060311559151!3d46.4720561791258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63170c46f21d7%3A0xefb64d46241b0f00!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JDRgNC90LDRg9GC0YHQutCw0Y8sIDIsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1615837548940!5m2!1sru!2sua"
             width="320" height="362" allowfullscreen></iframe>
       </section>
       <div class="footer-link__container">
-         <a href="#" class="link footer-link__logo"></a>
+         <a class="link footer-link__logo" href="index.html" aria-label="Логотип компании Cat Energy"></a>
          <div class="footer-link__line"></div>
          <ul class="footer-link__list social-list">
             <li class="footer-link__item">
-               <a href="#" class="footer-link__linkvk">
+               <a class="footer-link__linkvk" href="https://vk.com/" aria-label="Социальная сеть Вконтакте компании Cat Energy">
                   <svg class="icon icon-vk" width="25" height="18">
                      <use xlink:href="./img/sprite.svg#vk"></use>
                   </svg>
                </a>
             </li>
             <li class="footer-link__item">
-               <a href="#" class="footer-link__linkin">
+               <a class="footer-link__linkin" href="https://www.instagram.com/?hl=ru" aria-label="Социальная сеть Инстаграм компании Cat Energy">
                   <svg class="icon icon-in" width="18" height="18">
                      <use xlink:href="./img/sprite.svg#instagram"></use>
                   </svg>
                </a>
             </li>
             <li class="footer-link__item">
-               <a href="#" class="footer-link__linkfc">
+               <a class="footer-link__linkfc" href="https://uk-ua.facebook.com/" aria-label="Социальная сеть Вконтакте компании Cat Energy">
                   <svg class="icon icon-fc" width="12" height="21">
                      <use xlink:href="./img/sprite.svg#fc"></use>
                   </svg>

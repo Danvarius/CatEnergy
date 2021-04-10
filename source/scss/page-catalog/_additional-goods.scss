@@ -166,7 +166,7 @@
       }
 
       .additional-goods__order-button {
-         margin: 0 0 15px 0;
+         margin-bottom: 15px;
          padding: 10px 0;
          width: 100%;
       }
@@ -290,19 +290,20 @@
 
    .additional-goods__block-bonus {
       flex-direction: row;
+      justify-content: space-between;
       width: 92.18%;
       height: 200px;
 
       background-image: url('../img/gift-photo-tablet@1x.jpg');
 
       .additional-goods__present-icon {
-         margin: 57px 275px 60px 88px;
+         margin: 57px 0 60px 88px;
          width: 70px;
          height: 72px;
       }
 
       .additional-goods__text {
-         margin-top: 70px;
+         margin: 70px 88px 0 0;
          text-align: left;
       }
    }
@@ -318,7 +319,8 @@
 
    .additional-goods__block-bonus {
       flex-direction: column;
-      width: 243px;
+      justify-content: start;
+      width: 310px;
       height: 327px;
       margin: 143px 110px 0 0;
 
@@ -326,6 +328,12 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 245px 327px;
+
+      .additional-goods__present-icon {
+         margin: 57px 0 60px 88px;
+         width: 70px;
+         height: 72px;
+      }
 
       .additional-goods__text {
          margin: 0 0 0 5px;
