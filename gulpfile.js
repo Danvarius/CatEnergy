@@ -12,6 +12,7 @@ const uglify       = require("gulp-uglify-es").default;
 const rename       = require("gulp-rename");
 const webp         = require("gulp-webp");
 const del          = require("del");
+const ghPages      = require('gulp-deploy-git');
 
 //Styles
 
@@ -99,6 +100,13 @@ function build() {
     .pipe(dest("build"));
 }
 
+//Github
+
+function deploy() {
+  return src("/build/**/*", {read: false})
+    .pipe(ghPages({repository: 'https://github.com/Danvarius/CatEnergy.git'}));
+}
+
 //Del
 
 function cleanBuild() {
@@ -123,6 +131,7 @@ exports.scripts      = scripts;
 exports.watcher      = watcher;
 exports.build        = build;
 exports.cleanBuild   = cleanBuild;
+exports.deploy       = deploy;
 
 exports.build   = series(cleanBuild, styles, scripts, optimization, imagewebp, build);
 exports.default = series(styles, scripts, server, watcher);
