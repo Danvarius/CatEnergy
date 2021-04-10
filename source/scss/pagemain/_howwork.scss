@@ -14,16 +14,12 @@
 
    .how-work {
       width: 94.79%;
-      margin: 0 auto 43px auto;
-      padding: 0 20px;
+      margin-bottom: 43px;
 
       .how-work__title {
          margin: 0 0 62px 0;
 
-         font-family: 'Oswald', sans-serif;
          font-size: 60px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 60px;
       }
    }
@@ -34,7 +30,7 @@
       width: 84.60%;
       max-width: 1300px;
       padding: 0 100px;
-      margin: 0 auto 69px auto;
+      margin-bottom: 69px;
       border: none;
    }
 }   
@@ -78,26 +74,23 @@
    }
 
    .how-work__block {
-      position: relative;
       flex-direction: column;
       width: 250px;
-      margin: 0 0 110px 0;
+      margin-bottom: 110px;
 
       .how-work__img {
+         top: 25px;
+         left: 24px;
+
          width: 32px;
          height: 34px;
-         top: 25px;
-         left: 24px ;
       }
 
       .how-work__text {
          position: relative;
          z-index: 2;
 
-         font-family: 'Arial', sans-serif;
          font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 24px;
       }
 

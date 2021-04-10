@@ -16,7 +16,7 @@ const del          = require("del");
 //Styles
 
 function styles() {
-  return src("source/sass/style.scss")
+  return src("source/scss/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(scss())
@@ -108,7 +108,7 @@ function cleanBuild() {
 //Watcher
 
 function watcher() {
-  watch("source/sass/**/*.scss", series("styles"));
+  watch("source/scss/**/*.scss", series("styles"));
   watch("source/js/*.js", series("scripts"));
   watch("source/*.html").on("change",browserSync.reload);
 }

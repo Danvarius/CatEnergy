@@ -9,11 +9,12 @@
    
 
    .main__background {
-      width: 50%;
-      height: 100%;
       position: absolute;
       top: 0;
       right: 0;
+
+      width: 50%;
+      height: 100%;
       z-index: 1;
       display: none;
 
@@ -23,23 +24,17 @@
    }
 }
 
-@media (min-width: $tablet) {
-   .page__body {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-   }
-}
-
 @media (min-width: $desktop) {
    .page__body {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-      box-sizing: border-box;
 
       .main__background {
          display: block;
+      }
+
+      @media (min-resolution: 2dppx) {
+         .main__background {
+            background-image: url('../img/index-background-desktop@2x.jpg');
+         }
       }
    }
 }

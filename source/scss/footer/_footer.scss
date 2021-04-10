@@ -8,14 +8,6 @@
 
 @media (min-width: $tablet) {
    .page-footer {
-      width: 100%;
-      margin: 0 auto;
-   }
-}
-
-@media (min-width: $desktop) {
-   .page-footer {
-      width: 100%;
       margin: 0 auto;
    }
 }
@@ -75,7 +67,6 @@
    .invite-address {
 
       .invite-address__wrapper {
-         width: 100%;
          padding: 20px 0 50px 0;
          background-color: $basic-grey;
 
@@ -187,9 +178,7 @@
 
    .footer-link__container {
       padding: 20px 30px;
-      margin: 0 auto;
       width: 91.95%;
-      box-sizing: border-box;
 
       .footer-link__logo {
          margin: 37px 0 30px 9px;
@@ -332,7 +321,6 @@
    
       .page-footer__link-academy{
          width: 164px;
-         justify-content: space-between;
 
          .page-footer__svg {
             margin-top: 3px;

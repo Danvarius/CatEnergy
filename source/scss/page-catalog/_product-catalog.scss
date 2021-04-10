@@ -134,6 +134,16 @@
       text-transform: uppercase;
       color: $special-dark-grey;
       background-color: $basic-grey;
+
+      transition: background-color 0.3s ease;
+
+      &:hover {
+         background-color: $special-grey-two;
+      }
+
+      &:active {
+         color: $special-dark-grey-two;
+      }
    }
 }
 
@@ -150,7 +160,7 @@
       background-color: $basic-grey;
 
       .catalog-list__svg {
-         margin: 25px auto 50px auto;
+         margin-bottom: 50px;
          width: 60px;
          height: 60px;
 
@@ -162,32 +172,23 @@
 
          .catalog-list__title {
             width: 134px;
-            margin: 0 auto 20px auto;
+            margin-bottom: 20px;
       
-            font-family: 'Oswald', sans-serif;
             font-size: 20px;
-            font-style: normal;
             font-weight: 400;
             line-height: 24px;
-            color: #111111;
-            text-transform: uppercase;
          }
       
          .catalog-item__subtitle {
             width: 167px;
-            margin: 0 auto;
 
-            font-family: 'Arial', sans-serif;
             font-size: 16px;
-            font-style: normal;
             font-weight: 300;
             line-height: 18px;
-            color: $special-dark-grey;
          }
       }
 
       .catalog-list__link {
-         display: block;
          width: 87.90%;
          margin: 0 auto;
          padding: 15px 0;
@@ -294,10 +295,7 @@
       width: 155px;
       margin: 0 auto 27px auto;
 
-      font-family: 'Oswald', sans-serif;
       font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 24px;
       text-align: center;
    }
@@ -313,18 +311,12 @@
       border-bottom: 1px solid $special-grey;
 
       .catalog-item__concept {
-         font-family: 'Arial', sans-serif;
          font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 16px;
       }
    
       .catalog-item__value {
-         font-family: 'Arial', sans-serif;
          font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
          line-height: 16px;
       }
    }
