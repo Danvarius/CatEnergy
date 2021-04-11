@@ -17,24 +17,3 @@ navButton.addEventListener('click', function() {
    }
 });
 
-var inputWidth = document.querySelector('.about-diffenition__small-range');
-var linkOne = document.querySelector('.about-diffenition__link-one');
-var linkTwo = document.querySelector('.about-diffenition__link-two');
-var imgOne = document.querySelector('.living-example__img');
-var imgTwo = document.querySelector('.living-example__img-two');
-
-linkOne.addEventListener('click', function() {
-   inputWidth.classList.remove('about-diffenition__small-range--right');
-   linkTwo.classList.remove('about-diffenition__border');
-   linkOne.classList.add('about-diffenition__border');
-   imgTwo.classList.remove('living-example__img-two--on');
-   imgOne.classList.remove('living-example__img--off');
-});
-
-linkTwo.addEventListener('click', function() {
-   inputWidth.classList.add('about-diffenition__small-range--right');
-   linkOne.classList.remove('about-diffenition__border');
-   linkTwo.classList.add('about-diffenition__border');
-   imgTwo.classList.add('living-example__img-two--on');
-   imgOne.classList.add('living-example__img--off');
-});
