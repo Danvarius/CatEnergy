@@ -36,7 +36,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax sass",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
