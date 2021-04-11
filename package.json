@@ -7,6 +7,7 @@
     "autoprefixer": "10.2.x",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.x",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
@@ -22,8 +23,13 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html": "^1.0.2",
     "imagemin-webp": "^5.1.x",
+    "path": "^0.12.7",
     "stylelint": "13.11.x",
     "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Danvarius/CatEnergy"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
