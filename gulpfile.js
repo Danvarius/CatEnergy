@@ -12,7 +12,8 @@ const uglify       = require("gulp-uglify-es").default;
 const rename       = require("gulp-rename");
 const webp         = require("gulp-webp");
 const del          = require("del");
-const ghPages      = require('gulp-deploy-git');
+const ghPages      = require('gh-pages');
+const path         = require('path');
 
 //Styles
 
@@ -102,9 +103,8 @@ function build() {
 
 //Github
 
-function deploy() {
-  return src("/build/**/*", {read: false})
-    .pipe(ghPages({repository: 'https://github.com/Danvarius/CatEnergy.git'}));
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), "build"), cb);
 }
 
 //Del
