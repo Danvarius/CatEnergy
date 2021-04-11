@@ -14,6 +14,7 @@ const webp         = require("gulp-webp");
 const del          = require("del");
 const ghPages      = require('gh-pages');
 const path         = require('path');
+const htmlmin      = require('gulp-htmlmin');
 
 //Styles
 
@@ -35,6 +36,14 @@ function styles() {
     .pipe(sourcemap.write("."))
     .pipe(dest("source/css"))
     .pipe(browserSync.stream());
+}
+
+//Htmlmin
+
+function minhtml() {
+  return src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest('build'));
 }
 
 //Server
@@ -96,7 +105,6 @@ function build() {
     "source/css/style.min.css",
     "source/fonts/**/*",
     "source/js/main.min.js",
-    "source/*.html",
   ], {base: "source"})
     .pipe(dest("build"));
 }
@@ -132,6 +140,7 @@ exports.watcher      = watcher;
 exports.build        = build;
 exports.cleanBuild   = cleanBuild;
 exports.deploy       = deploy;
+exports.minhtml      = minhtml;
 
-exports.build   = series(cleanBuild, styles, scripts, optimization, imagewebp, build);
+exports.build   = series(cleanBuild, minhtml, styles, scripts, optimization, imagewebp, build);
 exports.default = series(styles, scripts, server, watcher);
