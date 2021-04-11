@@ -104,7 +104,7 @@ function build() {
 //Github
 
 function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), "build"), cb);
+  ghPages.publish(path.join(process.cwd(), "./build"), cb);
 }
 
 //Del
