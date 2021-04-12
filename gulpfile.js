@@ -101,8 +101,7 @@ function scripts() {
 
 function build() {
   return src ([
-    "source/css/style.css",
-    "source/css/style.min.css",
+    "source/css/**/*.css",
     "source/fonts/**/*",
     "source/js/main.min.js",
   ], {base: "source"})

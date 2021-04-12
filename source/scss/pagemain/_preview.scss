@@ -41,7 +41,9 @@
       position: relative;
 
       display: block;
-      margin-bottom: 30px;
+      width: 90%;
+      margin: 0 auto 30px auto;
+      padding: 0 10px;
       z-index: 3;
 
       font-family: 'Oswald', sans-serif;
@@ -78,6 +80,7 @@
       text-align: center;
       text-transform: uppercase;
       color: #ffffff;
+      word-wrap: wrap;
       background-color: $basic-green;
       transition: background-color 0.3s ease;
 
@@ -104,8 +107,9 @@
       }
 
       .preview__title {
-         width: 70%;
-         margin: 15px 0 40px 87px;
+         width: 65%;
+         margin: 15px 0 40px 95px;
+         padding: 0;
 
          font-size: 60px;
          line-height: 60px;
@@ -115,6 +119,8 @@
 
       .preview__subtitle {
          margin: 0 0 50px 100px;
+         padding: 0;
+         width: 50%;
 
          font-size: 20px;
          line-height: 20px;
