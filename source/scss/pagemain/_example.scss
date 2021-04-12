@@ -60,13 +60,13 @@
    .living-example__container {
       position: relative;
       width: 85.72%;
-      max-width: 1300px;
+      max-width: 1316px;
       margin: 0 auto;
       padding: 0 100;
 
       .living-example__title {
          padding: 30px 0 0 0;
-         margin: 0 auto;
+         margin: 0;
          max-width: 1114px;
       }
    }
@@ -106,6 +106,7 @@
    .living-example__wrapper {
       width: 1220px;
       padding: 0 0 45px 0;
+      margin: 0;
 
       .living-example__text {
          width: 36%;

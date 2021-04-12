@@ -6,16 +6,16 @@ critical.generate({
 
    base: './',
 
-   src: '_catalog.html',
+   src: '_form.html',
 
    width: 320,
 
    height: 400,
 
    target: {
-      css: 'critical-two.css',
-      html: 'index.html',
-      uncritical: 'uncritical-two.css'
+      css: 'critical-three.css',
+      html: 'form.html',
+      uncritical: 'uncritical-three.css'
    },
 
    minify: true,
